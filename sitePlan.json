@@ -1,0 +1,42 @@
+{
+  "businessName": "Emmy's Enterprise",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Quality Manufacturing Excellence in Borno State",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Emmy's Enterprise - Manufacturing Excellence in Maiduguri. Leading manufacturer delivering quality products and reliable solutions across Borno State and beyond. Your trusted partner for industrial manufacturing needs.",
+      "imagePrompt": "Photorealistic wide-angle shot of a modern manufacturing facility in Maiduguri, Nigeria, with clean industrial equipment, organized production floor, workers in safety gear, bright natural lighting through large windows, professional industrial atmosphere, blue and grey color palette",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Emmy's Enterprise is a premier manufacturing company located in the heart of Maiduguri, Borno State. We are committed to delivering high-quality manufactured products that meet international standards while serving the local and regional markets. Our state-of-the-art facility at Sabon Gari Polo combines modern manufacturing techniques with skilled craftsmanship to ensure consistent quality and reliability. We pride ourselves on our ability to meet diverse manufacturing needs while maintaining excellence in every product that leaves our facility.",
+      "imagePrompt": "Professional photograph of a Nigerian manufacturing plant interior, showing precision equipment, quality control stations, organized workspace with safety signage, natural daylight illuminating clean production areas, workers collaborating, sense of modern efficiency and professionalism",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Manufacturing Services",
+      "copy": "At Emmy's Enterprise, we offer comprehensive manufacturing solutions tailored to meet your specific requirements. Our services include custom manufacturing, product development, quality assurance testing, and bulk production capabilities. We work with various materials and specifications to deliver products that exceed expectations. Our experienced team ensures every project receives dedicated attention from initial consultation through final delivery. Whether you need small-batch specialized items or large-scale production runs, we have the capacity and expertise to fulfill your manufacturing needs efficiently and cost-effectively.",
+      "imagePrompt": "Clean, bright photograph of diverse manufacturing processes in a Nigerian facility, showing different production lines, quality control inspection stations, packaged finished products, workers operating modern machinery, organized inventory systems, professional industrial setting with good lighting",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Get in touch with Emmy's Enterprise today to discuss your manufacturing needs. Our team is ready to provide expert consultation and competitive quotes for your projects. Visit us at our facility in Maiduguri or reach out via phone or WhatsApp. We look forward to partnering with you to bring your manufacturing requirements to life with quality, efficiency, and professionalism.",
+      "imagePrompt": "Welcoming photograph of a modern Nigerian office reception area with professional staff, clean desk setup, company branding visible, comfortable waiting area, natural lighting, plants, professional yet approachable atmosphere, Maiduguri business setting",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 706 939 3185",
+    "email": "info@emmysenterprise.com",
+    "address": "Plot 10, Old Mulai Road, Sabon Gari Polo, Maiduguri, Borno State",
+    "whatsapp": "https://wa.me/2347069393185"
+  }
+}
