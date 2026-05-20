@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmy's Enterprise - Quality Manufacturing Excellence in Borno State</title>
+    <title>High Fliers Cross-Border Payments Limited - Seamless Cross-Border Payments Across Africa and Beyond</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #3c260c;
-            --color-accent: #d96a24;
-            --color-bg: #F8F0E8;
-            --color-text: #321A0C;
-            --color-surface: #3f1d0c;
-            --color-secondary-accent: #97887e;
-            --font-display: 'Barlow Condensed', sans-serif;
-            --font-body: 'Lato', sans-serif;
-            --border-radius: 2px;
+            --color-primary: #0a2c54;
+            --color-accent: #20abf3;
+            --color-bg: #EEF4FF;
+            --color-text: #0A2250;
+            --color-surface: #12307b;
+            --color-secondary-accent: #2fb57b;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Manrope', sans-serif;
+            --border-radius: 16px;
         }
 
         * {
@@ -35,28 +35,38 @@
             color: var(--color-text);
             background-color: var(--color-bg);
             line-height: 1.6;
-            position: relative;
         }
 
-        body::before {
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
             content: '';
-            position: fixed;
-            top: 0;
+            position: absolute;
+            bottom: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" /></filter><rect width="300" height="300" filter="url(%23noise)" opacity="0.04"/></svg>');
-            pointer-events: none;
-            z-index: 1;
+            width: 60px;
+            height: 3px;
+            background: var(--color-accent);
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 2;
+        section {
+            animation: fadeUp 0.6s ease forwards;
         }
+
+        section:nth-child(2) { animation-delay: 0s; }
+        section:nth-child(3) { animation-delay: 0.1s; }
+        section:nth-child(4) { animation-delay: 0.2s; }
+        section:nth-child(5) { animation-delay: 0.3s; }
+        section:nth-child(6) { animation-delay: 0.4s; }
+        section:nth-child(7) { animation-delay: 0.5s; }
+        section:nth-child(8) { animation-delay: 0.6s; }
+        section:nth-child(9) { animation-delay: 0.7s; }
 
         @keyframes fadeUp {
             from {
@@ -69,17 +79,20 @@
             }
         }
 
+        /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(248, 240, 232, 0.95);
+            background: rgba(238, 244, 255, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 4px 4px 0 rgba(60, 38, 12, 0.1);
+            box-shadow: 0 2px 10px rgba(10, 44, 84, 0.1);
         }
 
-        nav .container {
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -90,14 +103,12 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
             list-style: none;
+            gap: 2rem;
         }
 
         .nav-links a {
@@ -105,20 +116,19 @@
             color: var(--color-text);
             font-weight: 500;
             transition: color 0.3s ease;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
         }
 
         .nav-links a:hover {
             color: var(--color-accent);
         }
 
+        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
+            z-index: 1001;
         }
 
         .mobile-menu-btn span {
@@ -141,6 +151,7 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
+        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
@@ -148,7 +159,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -4px 4px 0 rgba(60, 38, 12, 0.15);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -174,43 +185,32 @@
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .mobile-menu ul a:hover {
             color: var(--color-accent);
         }
 
-        section {
-            padding: 80px 0;
-            position: relative;
-            z-index: 2;
-        }
-
+        /* Hero Section */
         #hero {
-            animation: fadeUp 0.6s ease forwards;
             position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 0;
+            justify-content: center;
+            text-align: center;
+            color: white;
             overflow: hidden;
         }
 
-        .hero-background {
+        .hero-image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
-        }
-
-        .hero-background img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
+            z-index: 1;
         }
 
         .hero-overlay {
@@ -226,57 +226,94 @@
         .hero-content {
             position: relative;
             z-index: 3;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
+            max-width: 900px;
+            padding: 2rem;
         }
 
         .hero-content h1 {
-            font-family: var(--font-display);
             font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-content h1::after {
+            display: none;
         }
 
         .hero-content p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 2rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 300;
+            line-height: 1.8;
         }
 
-        .cta-button {
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
             display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
             background: var(--color-accent);
             color: white;
-            padding: 1rem 3rem;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-            border-radius: var(--border-radius);
         }
 
-        .cta-button:hover {
-            background: var(--color-primary);
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+        .btn-primary:hover {
+            background: #1a96d8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(32, 171, 243, 0.4);
         }
 
+        .btn-secondary {
+            background: var(--color-secondary-accent);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #28a56e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(47, 181, 123, 0.4);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--color-text);
+            opacity: 0.8;
+            margin-bottom: 3rem;
+        }
+
+        /* About Section */
         #about {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.1s;
             background: white;
         }
 
-        .about-content {
+        .split-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -286,212 +323,320 @@
         .about-image {
             width: 100%;
             height: 500px;
-            overflow: hidden;
-            box-shadow: 6px 6px 0 var(--color-accent);
-            border-radius: var(--border-radius);
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(10, 44, 84, 0.15);
         }
 
-        .about-text h2 {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
+        .about-content h3 {
+            font-size: 1.75rem;
             color: var(--color-primary);
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
 
-        .about-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--color-text);
+        .about-content ul {
+            list-style: none;
+            margin: 1.5rem 0;
         }
 
+        .about-content ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .about-content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-secondary-accent);
+            font-weight: bold;
+        }
+
+        /* Services Section */
         #services {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
+            background: var(--color-bg);
         }
 
-        .section-title {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            color: var(--color-primary);
-            text-align: center;
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
-        .services-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .services-image {
-            width: 100%;
-            height: 400px;
-            margin-bottom: 2rem;
-            overflow: hidden;
-            box-shadow: 6px 6px 0 var(--color-accent);
+        .service-card {
+            background: white;
+            padding: 2rem;
             border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(10, 44, 84, 0.1);
+            transition: all 0.3s ease;
         }
 
-        .services-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(10, 44, 84, 0.15);
         }
 
-        .services-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3::after {
+            display: none;
+        }
+
+        .service-card p {
             color: var(--color-text);
-            text-align: center;
+            line-height: 1.7;
         }
 
-        #contact {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
+        /* How It Works Section */
+        #how-it-works {
             background: white;
         }
 
-        .contact-content {
-            max-width: 800px;
-            margin: 0 auto;
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .step {
             text-align: center;
+            padding: 2rem;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: var(--color-accent);
+            color: white;
+            border-radius: 50%;
+            line-height: 60px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .step h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .step h3::after {
+            display: none;
+        }
+
+        /* Security Section */
+        #security {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        #security .section-title,
+        #security h3 {
+            color: white;
+        }
+
+        #security h3::after {
+            background: var(--color-accent);
+        }
+
+        .security-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .security-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+        }
+
+        .security-feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .security-feature ul {
+            list-style: none;
+        }
+
+        .security-feature ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .security-feature ul li::before {
+            content: '🔒';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            background: var(--color-bg);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-accent);
+            box-shadow: 0 4px 15px rgba(10, 44, 84, 0.1);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-primary);
+            font-style: normal;
+        }
+
+        /* FAQ Section */
+        #faq {
+            background: white;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 3rem auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--color-bg);
+            border-radius: var(--border-radius);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-answer {
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--color-bg);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--color-primary);
         }
 
         .contact-image {
             width: 100%;
-            height: 300px;
-            margin-bottom: 2rem;
-            overflow: hidden;
-            box-shadow: 6px 6px 0 var(--color-accent);
-            border-radius: var(--border-radius);
-        }
-
-        .contact-image img {
-            width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        .contact-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-            color: var(--color-text);
-        }
-
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            background: var(--color-bg);
-            padding: 1.5rem;
-            border-left: 4px solid var(--color-accent);
-            text-align: left;
-            box-shadow: 4px 4px 0 rgba(60, 38, 12, 0.1);
-        }
-
-        .contact-item strong {
-            font-family: var(--font-display);
-            color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-item a {
-            color: var(--color-accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-
-        .whatsapp-button {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            font-weight: 700;
-            margin-top: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
             border-radius: var(--border-radius);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(10, 44, 84, 0.15);
         }
 
-        .whatsapp-button:hover {
-            background: #20BA5A;
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
-        }
-
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
-            width: 60px;
-            height: 60px;
             bottom: 30px;
             right: 30px;
             background: #25D366;
             color: white;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
             text-decoration: none;
             transition: all 0.3s ease;
         }
 
         .whatsapp-float:hover {
-            background: #20BA5A;
             transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
+        /* Footer */
         footer {
-            background: var(--color-surface);
+            background: var(--color-primary);
             color: white;
             text-align: center;
-            padding: 2rem 0;
-            position: relative;
-            z-index: 2;
+            padding: 2rem;
         }
 
-        footer p {
-            font-size: 0.9rem;
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 60px 1.5rem;
+            }
         }
 
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
+            
             .mobile-menu-btn {
                 display: flex;
-            }
-
-            section {
-                padding: 48px 0;
             }
 
             .hero-content h1 {
@@ -502,68 +647,53 @@
                 font-size: 1rem;
             }
 
-            .about-content {
+            .section {
+                padding: 48px 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .split-layout,
+            .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .about-image {
+            .about-image,
+            .contact-image {
                 height: 300px;
             }
 
-            .about-text h2,
-            .section-title {
-                font-size: 1.8rem;
+            .steps-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
-            .services-image {
-                height: 250px;
+            .cta-buttons {
+                flex-direction: column;
             }
 
-            .contact-image {
-                height: 200px;
-            }
-
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 24px;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 1.5rem;
-            }
-
-            .cta-button {
-                padding: 0.8rem 2rem;
-                font-size: 0.9rem;
-            }
-
-            .about-text h2,
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .about-text p,
-            .services-text,
-            .contact-text {
-                font-size: 1rem;
+            .btn {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <div class="container">
-            <div class="logo">Emmy's Enterprise</div>
+        <div class="nav-container">
+            <div class="logo">High Fliers</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -572,116 +702,157 @@
                 <span></span>
             </div>
         </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
+    <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-background">
-            <img src="https://images.pexels.com/photos/18351354/pexels-photo-18351354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Emmy's Enterprise Manufacturing Facility">
-        </div>
+        <img src="https://images.pexels.com/photos/30688597/pexels-photo-30688597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="High Fliers Cross-Border Payments" class="hero-image">
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1>Emmy's Enterprise</h1>
-            <p>Manufacturing Excellence in Maiduguri. Leading manufacturer delivering quality products and reliable solutions across Borno State and beyond. Your trusted partner for industrial manufacturing needs.</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+        <div class="hero-content">
+            <h1>Send Money Across Borders with Speed, Security, and Confidence</h1>
+            <p>High Fliers Cross-Border Payments Limited is your trusted partner for fast, reliable international remittance services. Whether you're sending money to family, paying for goods and services, or managing business transactions across borders, we make it simple, secure, and affordable. Licensed and regulated, we serve individuals and businesses across Nigeria and the globe.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started Today</a>
+                <a href="#services" class="btn btn-secondary">Send Money Now</a>
+            </div>
         </div>
     </section>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://images.pexels.com/photos/12550689/pexels-photo-12550689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Emmy's Enterprise Manufacturing Process">
-                </div>
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Emmy's Enterprise is a premier manufacturing company located in the heart of Maiduguri, Borno State. We are committed to delivering high-quality manufactured products that meet international standards while serving the local and regional markets. Our state-of-the-art facility at Sabon Gari Polo combines modern manufacturing techniques with skilled craftsmanship to ensure consistent quality and reliability. We pride ourselves on our ability to meet diverse manufacturing needs while maintaining excellence in every product that leaves our facility.</p>
+            <div class="split-layout">
+                <img src="https://images.pexels.com/photos/30677717/pexels-photo-30677717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About High Fliers" class="about-image">
+                <div class="about-content">
+                    <h2 class="section-title">Who We Are</h2>
+                    <p>High Fliers Cross-Border Payments Limited (also known as High Fliers International Remittance Co) is a leading Nigerian fintech company specializing in secure, efficient cross-border payment solutions. Based in Maiduguri, Borno State, we serve clients across Nigeria and internationally, providing seamless remittance services that connect families, businesses, and communities worldwide.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To democratize international payments by making them accessible, affordable, and lightning-fast for every Nigerian, regardless of location.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To become Africa's most trusted cross-border payment platform, bridging the gap between Nigeria and the global economy.</p>
+                    
+                    <h3>Why Choose High Fliers?</h3>
+                    <ul>
+                        <li>Fully Licensed & Regulated: We operate in full compliance with Nigerian financial regulations</li>
+                        <li>Competitive Exchange Rates: Get more value for every transaction</li>
+                        <li>Fast Transfers: Most transactions complete within minutes</li>
+                        <li>Secure Technology: Bank-grade encryption protects every transaction</li>
+                        <li>24/7 Support: Our team is always here to assist you</li>
+                        <li>Pan-Nigerian Coverage: From Maiduguri to Lagos, we serve all Nigerians</li>
+                    </ul>
+                    
+                    <p>Our leadership brings extensive experience from the Nigerian lending and fintech sectors, ensuring you receive world-class service backed by deep local expertise.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <!-- Services Section -->
+    <section id="services" class="section">
         <div class="container">
-            <h2 class="section-title">Our Manufacturing Services</h2>
-            <div class="services-content">
-                <div class="services-image">
-                    <img src="https://images.pexels.com/photos/31199559/pexels-photo-31199559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Emmy's Enterprise Production Lines">
+            <h2 class="section-title">Comprehensive Cross-Border Payment Solutions</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Personal Remittance</h3>
+                    <p>Send money to loved ones across Africa, Europe, Asia, and the Americas. Support your family with fast, secure transfers at competitive rates. Whether it's school fees, medical expenses, or regular support, we've got you covered.</p>
                 </div>
-                <div class="services-text">
-                    <p>At Emmy's Enterprise, we offer comprehensive manufacturing solutions tailored to meet your specific requirements. Our services include custom manufacturing, product development, quality assurance testing, and bulk production capabilities. We work with various materials and specifications to deliver products that exceed expectations. Our experienced team ensures every project receives dedicated attention from initial consultation through final delivery. Whether you need small-batch specialized items or large-scale production runs, we have the capacity and expertise to fulfill your manufacturing needs efficiently and cost-effectively.</p>
+                <div class="service-card">
+                    <h3>Business Payments</h3>
+                    <p>Pay international suppliers, receive payments from global clients, and manage your business cash flow across borders. We support bulk payments, recurring transactions, and dedicated business accounts.</p>
                 </div>
+                <div class="service-card">
+                    <h3>Bill Payments</h3>
+                    <p>Pay international bills, subscriptions, and services directly from Nigeria. From education fees to healthcare, technology subscriptions to property payments—we make it seamless.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Foreign Exchange</h3>
+                    <p>Access competitive foreign exchange rates for USD, GBP, EUR, and other major currencies. Lock in rates for future transactions with our forward contracts.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Agent Network</h3>
+                    <p>Join our growing network of agents across Nigeria. Earn commissions while helping your community access international payment services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile & Online Platform</h3>
+                    <p>Send money anytime, anywhere through our secure mobile app and web platform. Track transactions in real-time, save beneficiaries, and access transaction history at your fingertips.</p>
+                </div>
+            </div>
+            <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: var(--border-radius);">
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Supported Corridors:</h3>
+                <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <li style="padding: 0.5rem 0;">🇳🇬 Nigeria → USA, UK, Canada, Australia</li>
+                    <li style="padding: 0.5rem 0;">🇳🇬 Nigeria → Ghana, Kenya, South Africa, Rwanda</li>
+                    <li style="padding: 0.5rem 0;">🇳🇬 Nigeria → UAE, Saudi Arabia, Qatar</li>
+                    <li style="padding: 0.5rem 0;">🇳🇬 Nigeria → China, India, Malaysia</li>
+                </ul>
+                <p style="margin-top: 1rem; font-weight: 600; color: var(--color-accent);">And many more destinations worldwide</p>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-image">
-                    <img src="https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Emmy's Enterprise Office">
+            <h2 class="section-title">Send Money in 3 Simple Steps</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Account</h3>
+                    <p>Register online or visit our Maiduguri office. Provide your valid ID (NIN, Driver's License, or International Passport) and complete our quick verification process. Account setup takes just minutes.</p>
                 </div>
-                <div class="contact-text">
-                    <p>Get in touch with Emmy's Enterprise today to discuss your manufacturing needs. Our team is ready to provide expert consultation and competitive quotes for your projects. Visit us at our facility in Maiduguri or reach out via phone or WhatsApp. We look forward to partnering with you to bring your manufacturing requirements to life with quality, efficiency, and professionalism.</p>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose Your Destination & Amount</h3>
+                    <p>Select the recipient country, enter the amount you wish to send, and see the exact amount your beneficiary will receive. Our transparent pricing means no hidden fees—what you see is what you pay.</p>
                 </div>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <strong>Phone</strong>
-                        <a href="tel:+2347069393185">+234 706 939 3185</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Email</strong>
-                        <a href="mailto:info@emmysenterprise.com">info@emmysenterprise.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Address</strong>
-                        <span>Plot 10, Old Mulai Road, Sabon Gari Polo, Maiduguri, Borno State</span>
-                    </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Send & Track</h3>
+                    <p>Fund your transaction via bank transfer, card payment, or cash deposit at our office. Your money is on its way! Track your transfer in real-time and receive confirmation when your beneficiary collects their funds.</p>
                 </div>
-                <a href="https://wa.me/2347069393185" class="whatsapp-button" target="_blank">Message Us on WhatsApp</a>
+            </div>
+            <div style="margin-top: 3rem; padding: 2rem; background: var(--color-accent); color: white; border-radius: var(--border-radius); text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">First-Time Sender?</h3>
+                <p style="margin-bottom: 1rem;">Enjoy special rates on your first transaction. Our customer support team will guide you through every step to ensure a smooth experience.</p>
+                <h4 style="color: white; margin-top: 2rem; margin-bottom: 0.5rem;">Required Documents:</h4>
+                <p>Valid government-issued ID • Proof of address (utility bill or bank statement) • Beneficiary details (name, account number, bank details)</p>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/2347069393185" class="whatsapp-float" target="_blank">
-        <span>💬</span>
-    </a>
-
-    <footer>
+    <!-- Security Section -->
+    <section id="security" class="section">
         <div class="container">
-            <p>&copy; 2025 Emmy's Enterprise. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
-            });
-
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-    </script>
-</body>
-</html>
+            <h2 class="section-title">Your Security is Our Priority</h2>
+            <p class="section-subtitle">At High Fliers Cross-Border Payments Limited, we understand that trust is earned through unwavering commitment to security and regulatory compliance.</p>
+            <div class="security-features">
+                <div class="security-feature">
+                    <h3>Regulatory Compliance</h3>
+                    <ul>
+                        <li>Licensed by relevant Nigerian financial regulatory authorities</li>
+                        <li>Full compliance with CBN guidelines on international money transfers</li>
+                        <li>Adherence to Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations</li>
+                        <li>Regular audits and reporting to regulatory bodies</li>
+                    </ul>
+                </div>
+                <div class="security-feature">
+                    <h3>Technology Security</h3>
+                    <ul>
+                        <li>256-bit SSL encryption for all online transactions</li>
+                        <li>Multi-factor authentication to protect your account</li>
+                        <li>Secure data centers with redundant backups</li>
+                        <li>PCI
